@@ -1,0 +1,16 @@
+.brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem;
+}
+.brand_img{
+    margin: 1rem;
+}
+@media screen and (max-width:650px) {
+    .brand_img{
+        width: 80px;
+        margin: 1rem;
+    }
+}

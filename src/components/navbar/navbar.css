@@ -1,0 +1,123 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 6rem;
+    font-family: var(--font-family);
+}
+
+.nav_links {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav_logo {
+    margin-right: 2rem;
+}
+
+.nav_logo p {
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.nav_menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav_sign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav_menu p,
+.nav_sign p,
+.nav_dropdown p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    text-transform: capitalize;
+    cursor: pointer;
+    padding: 0 1rem;
+}
+
+.nav_sign button,
+.nav_dropdown button {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background-color: #FF4820;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.nav_toggle {
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+}
+
+.nav_dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+}
+
+.nav_dropdown p {
+    line-height: 40px;
+}
+
+.nav_dropdown_sign {
+    display: none;
+}
+
+@media screen and (max-width: 1050px) {
+    .nav_menu {
+        display: none;
+    }
+    .nav_toggle {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .nav_bar {
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .nav_bar {
+        padding: 2rem;
+    }
+    .nav_sign {
+        display: none;
+    }
+    .nav_dropdown {
+        top: 20px;
+    }
+    .nav_dropdown_sign {
+        display: block;
+    }
+}

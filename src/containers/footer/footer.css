@@ -1,0 +1,124 @@
+.footer{
+    background-color: #031B34;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 4rem;
+    margin-top: 6rem;
+    font-family: var(--font-family);
+}
+.footer_heading{
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    max-width: 800px;
+}
+.footer_end{
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 4rem;
+}
+.footer_button button{
+    background-color: #031B34;
+    border: 1px solid white;
+    font-family: var(--font-family);
+    padding: 1rem;
+    color: #fff;
+    margin-bottom: 6rem;
+    cursor: pointer;
+}
+.menu{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.menu_2_ctr{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+.menu_2{
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    line-height: 27px;
+    margin-right: 5%;
+}
+.menu_1{
+    max-width: 180px;
+    line-height: 25px;
+    font-size: 14px;
+    margin-right: 5%;
+}
+.menu_1 p{
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+.menu_2 p{
+    margin-bottom: 1rem;
+    font-size: 14px;
+    cursor: pointer;
+}
+.menu_2 h4{
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+@media screen and (max-width:850px) {
+    .footer_heading{
+        font-size: 45px;
+    }
+    .menu_2 p{
+        font-size: 12px;
+    }
+    .menu_2 h4{
+        font-size: 14px;
+    }
+    .menu_1{
+        font-size: 12px;
+    }
+    .menu_2{
+        margin-right: 8%;
+    }
+}
+@media screen and (max-width:550px) {
+    .footer_heading{
+        font-size: 40px;
+        margin: 5%;
+    }
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .menu_1{
+        margin: 0;
+        margin-bottom: 10%;
+        text-align: center;
+    }
+    .menu_2_ctr{
+        width: 100%;
+    }
+}
+@media screen and (max-width:450px) {
+    .footer_heading{
+        font-size: 32px;
+        line-height: 45px;
+    }
+    .menu_2 p{
+        font-size: 10px;
+    }
+    .menu_2 h4{
+        font-size: 12px;
+    }
+}

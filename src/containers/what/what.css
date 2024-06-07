@@ -1,0 +1,129 @@
+.what_content {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem;
+    padding: 2rem;
+    background: var(--color-footer);
+    background: -moz-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+    background: -webkit-radial-gradient(circle at 30% -100%, #042c54 25%, rgb(4, 63, 122) 85%, rgba(27, 120, 222, 1) 100%);
+    background: -o-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+    background: -ms-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+    background: radial-gradient(circle at 20% -100%, #033668 60%, rgb(11, 64, 117) 25%, rgb(36, 113, 196) 100%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.what_types, .what_poss, .what {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.what h4, .what_types h4 {
+    color: #fff;
+    font-size: 24px;
+    font-family: var(--font-family);
+    font-weight: 800;
+}
+
+.what p {
+    color: #81AFDD;
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 700px;
+    line-height: 28px;
+}
+
+.what_poss h2 {
+    font-size: 34px;
+    max-width: 475px;
+    line-height: 45px;
+    font-family: var(--font-family);
+    font-weight: 800;
+    margin-right: 2rem;
+}
+
+.what_poss p {
+    color: #FF8A71;
+    font-family: var(--font-family);
+    font-weight: 500;
+    align-self: center;
+}
+
+.what_types p {
+    color: #81AFDD;
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 350px;
+    line-height: 28px;
+}
+
+.what_types p, .what_types h4 {
+    margin-right: 10%;
+}
+
+.what h4 {
+    margin-right: 2rem;
+    width: 100px;
+}
+
+.what_types h4 {
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 850px) {
+    .what_types {
+        flex-direction: column;
+    }
+    .what {
+        flex-direction: column;
+    }
+    .what h4 {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+    .what_types p {
+        margin-bottom: 2rem;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .what_poss {
+        flex-direction: column;
+    }
+    .what_poss p {
+        margin-top: 1rem;
+        align-self: flex-start;
+    }
+    .what_poss h2 {
+        font-size: 25px;
+        line-height: 35px;
+        margin-right: 0px;
+    }
+    .what_types h4, .what h4 {
+        font-size: 18px;
+        margin-bottom: 1rem;
+    }
+    .what_types p, .what p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .what_content {
+        padding: 1rem;
+    }
+    .what_types p, .what p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-height: 200px;
+    }
+    .what_poss h2 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .what_poss p {
+        font-size: 13px;
+    }
+}
