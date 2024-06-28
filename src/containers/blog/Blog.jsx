@@ -5,7 +5,7 @@ import './blog.css';
 
 const Blog = () => {
   return (
-    <div className='blog'>
+    <div className='blog' id='blog'>
       <div className='blog_text gradient__text'>A lot is happening,<br/> We are blogging about it.</div>
       <div className='blog_ctr'>
         <div className='blog_ctr-1'>
