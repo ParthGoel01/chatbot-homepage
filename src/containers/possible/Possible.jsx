@@ -4,7 +4,7 @@ import './possible.css';
 
 const Possible = () => {
   return (
-    <div className='possible'>
+    <div className='possible' id='possibility'>
       <div className='poss_img'>
         <img src={possible} alt='possible' />
       </div>
