@@ -17,7 +17,7 @@ const Menu = () => {
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
-    <div className='navbar'>
+    <div className='navbar' id='home'>
       <div className='nav_links'>
         <div className='nav_logo'>
           <p>CHATBOT</p>
