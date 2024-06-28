@@ -4,7 +4,7 @@ import { Feature } from '../../components';
 
 const What = () => {
   return (
-    <div className='what_content'>
+    <div className='what_content' id='what'>
       <div className='what'>
         <div><Feature />
         <h4>What is ChatBot</h4></div>
