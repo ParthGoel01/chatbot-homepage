@@ -4,7 +4,7 @@ import { Feature } from '../../components';
 
 const Features = () => {
   return (
-    <div className='ftr'>
+    <div className='ftr' id='features'>
       <div className='ftr_heading'>
         <div className='ftr_heading-1 gradient__text'>The Future is Now and You Just Need To Realize It. Step into Future Today & Make it Happen.</div>
         <div className='ftr_heading-2'>Request Early Access to Get Started</div>
